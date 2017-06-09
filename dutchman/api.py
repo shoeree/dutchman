@@ -31,8 +31,9 @@ class Kraken(object):
             return result
         return None
 
-    def fetch(self):
+    def load(self):
         self.data = self.request()
+        return self
 
 
 class Public(Kraken):

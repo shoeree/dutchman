@@ -1,9 +1,8 @@
-from api import *
+from .api import *
 
 
 def main():
-    ap = AssetPairs(pair_name="ethcad")
-    ap.fetch()
+    ap = AssetPairs(pair_name="ethcad").load()
     print(ap.data)
 
 
